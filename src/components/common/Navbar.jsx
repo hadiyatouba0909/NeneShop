@@ -2,22 +2,17 @@
 import { Menu, Sun, Moon, Search } from "lucide-react";
 import { useTheme } from "../../context/ThemeContext";
 import { useSidebar } from "../../context/SidebarContext";
-
 const Navbar = () => {
   const { isDarkMode, toggleTheme } = useTheme();
   const { toggleSidebar } = useSidebar();
-
   return (
-    <nav className="bg-custom-pink text-white px-4 py-4 flex items-center">
-      {/* Bouton menu à gauche */}
+    <nav className="sticky top-0 bg-custom-pink text-white px-4 py-4 flex items-center shadow-md">
       <button
         onClick={toggleSidebar}
         className="p-2 rounded-lg hover:bg-custom-pink-dark"
       >
         <Menu size={24} />
       </button>
-
-      {/* Barre de recherche centrée */}
       <div className="flex-1 flex justify-center">
         <div className="relative w-1/2">
           <input
@@ -28,7 +23,6 @@ const Navbar = () => {
           <Search className="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-white/60" />
         </div>
       </div>
-
       <div className="flex items-center space-x-4">
         <button
           onClick={toggleTheme}
@@ -43,5 +37,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;

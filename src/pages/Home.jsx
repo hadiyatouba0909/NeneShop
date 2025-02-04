@@ -8,10 +8,10 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-6 bg-purple-50 dark:bg-gray-700 rounded-lg">
             <h2 className="text-xl font-semibold text-purple-800 dark:text-white mb-4">
-              Gestion des utilisateurs
+              Gestion des categories et produits
             </h2>
             <p className="text-gray-600 dark:text-gray-300">
-              Gérez facilement vos utilisateurs : ajout, modification, consultation et suppression.
+              Gérez facilement vos categories et produits : ajout, modification, consultation et suppression.
             </p>
           </div>
           <div className="p-6 bg-purple-50 dark:bg-gray-700 rounded-lg">
@@ -27,4 +27,4 @@ const Home = () => {
     )
   }
   
-  export default Home
+  export default Home;
