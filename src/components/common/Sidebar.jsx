@@ -29,7 +29,7 @@ const Sidebar = () => {
   };
 
   const menuItems = [
-    { path: "/", icon: <Home className="w-5 h-5" />, label: "Accueil" },
+    { path: "/home", icon: <Home className="w-5 h-5" />, label: "Accueil" },
     {
       id: "categories",
       icon: <Users className="w-5 h-5" />,
